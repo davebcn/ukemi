@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="2.425" errors="0" skipped="0" tests="3" name="org.davebcn.ukemi.TestUkemiServer">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/i386"/>
+    <property name="java.vm.version" value="17.1-b03"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/dave/personal/ukemi"/>
+    <property name="java.runtime.version" value="1.6.0_22-b04"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="basedir" value="/home/dave/personal/ukemi"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/endorsed"/>
+    <property name="os.arch" value="i386"/>
+    <property name="surefire.real.class.path" value="/tmp/surefirebooter5443033250139928252.jar"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/i386/server:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/i386:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib"/>
+    <property name="surefire.test.class.path" value="/home/dave/personal/ukemi/target/test-classes:/home/dave/personal/ukemi/target/classes:/home/dave/.m2/repository/log4j/log4j/1.2.9/log4j-1.2.9.jar:/home/dave/.m2/repository/org/mortbay/jetty/jetty/6.0.1/jetty-6.0.1.jar:/home/dave/.m2/repository/org/mortbay/jetty/jetty-util/6.0.1/jetty-util-6.0.1.jar:/home/dave/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.0.1/servlet-api-2.5-6.0.1.jar:/home/dave/.m2/repository/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar:/home/dave/.m2/repository/eu/medsea/mimeutil/mime-util/2.1.1/mime-util-2.1.1.jar:/home/dave/.m2/repository/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar:/home/dave/.m2/repository/org/slf4j/slf4j-log4j12/1.5.6/slf4j-log4j12-1.5.6.jar:/home/dave/.m2/repository/org/apache/jackrabbit/jackrabbit-webdav/2.2.4/jackrabbit-webdav-2.2.4.jar:/home/dave/.m2/repository/org/apache/jackrabbit/jackrabbit-jcr-commons/2.2.4/jackrabbit-jcr-commons-2.2.4.jar:/home/dave/.m2/repository/commons-httpclient/commons-httpclient/3.0/commons-httpclient-3.0.jar:/home/dave/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/dave/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar:/home/dave/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.11/jcl-over-slf4j-1.5.11.jar:/home/dave/.m2/repository/com/ettrema/milton-api/1.5.3-SNAPSHOT/milton-api-1.5.3-SNAPSHOT.jar:/home/dave/.m2/repository/com/ettrema/milton-servlet/1.5.3-SNAPSHOT/milton-servlet-1.5.3-SNAPSHOT.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Tiered Compilers"/>
+    <property name="os.version" value="2.6.32-24-generic"/>
+    <property name="user.home" value="/home/dave"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="dave"/>
+    <property name="java.class.path" value="/home/dave/personal/ukemi/target/test-classes:/home/dave/personal/ukemi/target/classes:/home/dave/.m2/repository/log4j/log4j/1.2.9/log4j-1.2.9.jar:/home/dave/.m2/repository/org/mortbay/jetty/jetty/6.0.1/jetty-6.0.1.jar:/home/dave/.m2/repository/org/mortbay/jetty/jetty-util/6.0.1/jetty-util-6.0.1.jar:/home/dave/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.0.1/servlet-api-2.5-6.0.1.jar:/home/dave/.m2/repository/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar:/home/dave/.m2/repository/eu/medsea/mimeutil/mime-util/2.1.1/mime-util-2.1.1.jar:/home/dave/.m2/repository/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar:/home/dave/.m2/repository/org/slf4j/slf4j-log4j12/1.5.6/slf4j-log4j12-1.5.6.jar:/home/dave/.m2/repository/org/apache/jackrabbit/jackrabbit-webdav/2.2.4/jackrabbit-webdav-2.2.4.jar:/home/dave/.m2/repository/org/apache/jackrabbit/jackrabbit-jcr-commons/2.2.4/jackrabbit-jcr-commons-2.2.4.jar:/home/dave/.m2/repository/commons-httpclient/commons-httpclient/3.0/commons-httpclient-3.0.jar:/home/dave/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/dave/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar:/home/dave/.m2/repository/org/slf4j/jcl-over-slf4j/1.5.11/jcl-over-slf4j-1.5.11.jar:/home/dave/.m2/repository/com/ettrema/milton-api/1.5.3-SNAPSHOT/milton-api-1.5.3-SNAPSHOT.jar:/home/dave/.m2/repository/com/ettrema/milton-servlet/1.5.3-SNAPSHOT/milton-servlet-1.5.3-SNAPSHOT.jar:"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.22/jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="es"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_22"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.22/jre/classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="/home/dave/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="1.004" classname="org.davebcn.ukemi.TestUkemiServer" name="testBasicRequest"/>
+  <testcase time="0.058" classname="org.davebcn.ukemi.TestUkemiServer" name="testBasicRepoWithOneFile"/>
+  <testcase time="1.283" classname="org.davebcn.ukemi.TestUkemiServer" name="testPutFileCreatesEncryptedFile"/>
+</testsuite>

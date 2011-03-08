@@ -1,0 +1,58 @@
+What's this all about?
+-----------------------
+Ukemi implements a security layer over any Filesystem located on your system.
+This layer offers a Filesystem that can be used by any application as a normal one but that will store files on the underlying Filesystem in an encrypted way.
+But wait, you got already tons on encrypted Filesystems available why another?
+	+ First , this is not an encrypted Filesystem, it's just a layer that can enable encryption at file level not at Filesystem level. So you can use encryption only on some files on a regular Filesystem.
+	+ Best, you can use it to encrypt files on net Filesystems like Amazon S3 and Dropbox, which is fine for some sensitive files that you're not very confortable pushing them on the cloud.
+
+How it works
+------------
+When you start Ukemi you must provide a base path and a password. Using this password Ukemi will used PBE (password based encryption) to encrypt/decrypt contents found on the given mountpoint.
+Ukemi provides a WebDAV Filesystem that can be used on most operating systems.
+
+Current status
+--------------
+The current version is a very early alpha version. It's kinda stable but it's long away from being production ready, but I'll be working towards building a beta version soon.
+
+Building
+--------
+This is a maven based project so you only need to use maven to build/test and package but I included some extra scripts. Before using maven use install_libs.sh to install extra libraries needed on building process from a set of provided files instead of fetching them from maven repo.
+
+After this only execute:
+	mvn package
+
+And enjoy.
+
+Usage
+------
+On Linux systems 
+
+	./start.sh baseDir password
+
+or using Java 
+	java -jar ukemi-1.0-jar-with-dependencies.jar baseDir password
+
+where basedir is the dir containing the encrypted files or where you want them to be and password is the password that has been (or will be) used to encrypt files on this dir.
+
+To mount the filesystem just mount the WebDAV server http://localhost:8080 with no credentials. On Linux you can use 
+
+Millestones
+-------------
+Alpha -> (Current status)
+	+ Basic PBE 
+	+ Stable and minimal set of func tests working
+Beta -> 
+	+ Complete set of func and unit tests working
+	+ Configurations stored on personal directory as config files
+	+ Password recovery using user input on boot
+	...
+1.0 ->
+	+ Ukemi running as system service
+	+ Windows version of all start / mount scripts
+	...
+
+Kudos
+------
+This soft is built over excellent Milton WebDAV lib by ettrema available at http://milton.ettrema.com/index.html. Kudos to those guys, the did a great job :).
+
